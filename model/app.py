@@ -16,9 +16,15 @@ st.set_page_config(
 # Load Model and Preprocessor
 # ============================================================
 
-loaded_model = joblib.load("logistic_model.pkl")
-loaded_preprocessor = joblib.load("preprocessor.pkl")
+BASE_DIR = Path(__file__).resolve().parent
 
+loaded_model = joblib.load(
+    BASE_DIR / "logistic_model.pkl"
+)
+
+loaded_preprocessor = joblib.load(
+    BASE_DIR / "preprocessor.pkl"
+)
 
 
 # ============================================================
