@@ -18,14 +18,11 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent
 
-loaded_model = joblib.load(
-    BASE_DIR / "logistic_model.pkl"
-)
+MODEL_PATH = BASE_DIR / "logistic_model.pkl"
+PREPROCESSOR_PATH = BASE_DIR / "preprocessor.pkl"
 
-loaded_preprocessor = joblib.load(
-    BASE_DIR / "preprocessor.pkl"
-)
-
+loaded_model = joblib.load(MODEL_PATH)
+loaded_preprocessor = joblib.load(PREPROCESSOR_PATH)
 
 # ============================================================
 # Header
