@@ -24,6 +24,10 @@
 
 ---
 
+## 🚀 Try The Project
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://customer-intelligence-retention.streamlit.app/)
+
 ## 📖 Project Overview
 
 Customer churn is one of the biggest challenges faced by subscription-based businesses. Losing existing customers directly impacts revenue and increases customer acquisition costs.
