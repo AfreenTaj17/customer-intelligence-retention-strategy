@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 from pathlib import Path
+
 # ============================================================
 # Page Configuration
 # ============================================================
@@ -16,13 +17,17 @@ st.set_page_config(
 # Load Model and Preprocessor
 # ============================================================
 
+
 BASE_DIR = Path(__file__).resolve().parent
 
-MODEL_PATH = BASE_DIR / "logistic_model.pkl"
-PREPROCESSOR_PATH = BASE_DIR / "preprocessor.pkl"
+loaded_model = joblib.load(
+    BASE_DIR / "logistic_model.pkl"
+)
 
-loaded_model = joblib.load(MODEL_PATH)
-loaded_preprocessor = joblib.load(PREPROCESSOR_PATH)
+loaded_preprocessor = joblib.load(
+    BASE_DIR / "preprocessor.pkl"
+)
+
 
 # ============================================================
 # Header
